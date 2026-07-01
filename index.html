@@ -1,0 +1,2293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Action Network Odds Study | Joey Chestnut Nathan's Hot Dog Contest</title>
+<meta name="description" content="An Action Network-style odds study on Joey Chestnut's implied chance to win Nathan's Hot Dog Eating Contest and reach record territory.">
+<style id="an-chestnut-odds-css">
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,700&family=Barlow+Condensed:wght@500;600;700;800;900&display=swap');
+
+  html,
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: #00b889 #ffffff;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+  }
+
+  html::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-left: 1px solid #dceee8;
+  }
+
+  html::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+    min-height: 52px;
+    background: linear-gradient(180deg, #00e6a8 0%, #00b889 100%);
+    border: 3px solid #ffffff;
+    border-radius: 999px;
+  }
+
+  html::-webkit-scrollbar-thumb:hover,
+  body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #18f5bf 0%, #009f7d 100%);
+  }
+
+  #an-chestnut-odds {
+    --an-green: #00e6a8;
+    --an-green-soft: #dcfff5;
+    --an-green-mid: #00b889;
+    --an-black: #050b0c;
+    --an-ink: #071515;
+    --an-text: #17252d;
+    --an-muted: #607179;
+    --an-line: #b8ded4;
+    --an-cream: #fbfffd;
+    --an-panel: #f4fffb;
+    --an-shadow: 0 16px 38px rgba(0,0,0,.08);
+    --an-display: 'Barlow Condensed', system-ui, sans-serif;
+    --an-sans: 'Source Serif 4', Georgia, serif;
+    --an-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --an-page-pad: clamp(16px, 2.2vw, 32px);
+    --an-max: none;
+  }
+
+  #an-chestnut-odds,
+  #an-chestnut-odds *,
+  #an-chestnut-odds *::before,
+  #an-chestnut-odds *::after {
+    box-sizing: border-box;
+  }
+
+  #an-chestnut-odds {
+    all: initial;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    isolation: isolate;
+    container-type: inline-size;
+    container-name: an-embed;
+    color: var(--an-text);
+    background: #fff;
+    font-family: var(--an-sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  #an-chestnut-odds button,
+  #an-chestnut-odds input,
+  #an-chestnut-odds select {
+    font: inherit;
+  }
+
+  #an-chestnut-odds a {
+    color: inherit;
+    text-decoration-color: rgba(0,230,168,.65);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  #an-chestnut-odds .an-main,
+  #an-chestnut-odds .an-section,
+  #an-chestnut-odds .an-intro,
+  #an-chestnut-odds .an-key-findings,
+  #an-chestnut-odds .an-methodology,
+  #an-chestnut-odds .an-footer {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #an-chestnut-odds .an-hero {
+    width: 100%;
+    padding: clamp(24px, 3.4vw, 46px) var(--an-page-pad) clamp(20px, 3vw, 38px);
+    background:
+      radial-gradient(circle at 94% 14%, rgba(0,230,168,.22), transparent 28%),
+      linear-gradient(90deg, #050b0c 0%, #071515 58%, #003f36 100%);
+    border-bottom: 7px solid var(--an-green);
+  }
+
+  #an-chestnut-odds .an-hero-inner {
+    width: 100%;
+    max-width: var(--an-max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: clamp(18px, 2.5vw, 34px);
+    align-items: end;
+  }
+
+  #an-chestnut-odds .an-kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35px;
+    margin: 0 0 16px;
+    padding: 0 14px;
+    background: var(--an-green);
+    color: #050b0c;
+    border: 0;
+    box-shadow: none;
+    font-family: var(--an-display);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-hero h1 {
+    display: block;
+    width: 100%;
+    max-width: 920px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: var(--an-display);
+    font-size: clamp(48px, 7.5vw, 96px);
+    line-height: .9;
+    font-weight: 900;
+    letter-spacing: .006em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 rgba(0,230,168,.24), 4px 4px 0 rgba(0,0,0,.22);
+  }
+
+  #an-chestnut-odds .an-hero p {
+    max-width: 840px;
+    margin: 18px 0 0;
+    color: #e9fff8;
+    font-family: var(--an-sans);
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.62;
+    font-weight: 500;
+  }
+
+  #an-chestnut-odds .an-hero-stat {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(18px, 2.1vw, 26px);
+    background: #fff;
+    border: 1px solid rgba(0,230,168,.54);
+    border-left: 7px solid var(--an-green);
+    box-shadow: 0 18px 38px rgba(0,0,0,.22);
+  }
+
+  #an-chestnut-odds .an-hero-stat::after {
+    content: "";
+    position: absolute;
+    top: -54px;
+    right: -54px;
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+    background: rgba(0,230,168,.18);
+    pointer-events: none;
+  }
+
+  #an-chestnut-odds .an-hero-stat span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0 0 8px;
+    color: #003f36;
+    font-family: var(--an-display);
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .085em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-hero-stat strong {
+    position: relative;
+    z-index: 1;
+    display: block;
+    color: #050b0c;
+    font-family: var(--an-display);
+    font-size: clamp(58px, 8cqw, 90px);
+    line-height: .9;
+    font-weight: 900;
+    letter-spacing: -.01em;
+  }
+
+  #an-chestnut-odds .an-hero-stat small {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: 9px;
+    color: #3f4854;
+    font-size: 13.5px;
+    line-height: 1.45;
+    font-weight: 700;
+  }
+
+  #an-chestnut-odds .an-intro {
+    padding: clamp(22px, 3vw, 36px) var(--an-page-pad) clamp(18px, 2.5vw, 30px);
+    background: #ffffff;
+  }
+
+  #an-chestnut-odds .an-intro-inner {
+    width: 100%;
+    max-width: var(--an-max);
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #an-chestnut-odds .an-intro p {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    color: #1f2933;
+    font-family: var(--an-sans);
+    font-size: clamp(16px, 1.2vw, 18px);
+    line-height: 1.72;
+    font-weight: 500;
+  }
+
+  #an-chestnut-odds .an-intro p + p {
+    margin-top: 15px;
+  }
+
+  #an-chestnut-odds .an-section {
+    margin: 0;
+    padding: 0 var(--an-page-pad) clamp(22px, 2.5vw, 32px);
+  }
+
+  #an-chestnut-odds .an-section-inner {
+    width: 100%;
+    max-width: var(--an-max);
+    margin: 0 auto;
+  }
+
+  #an-chestnut-odds .an-section-head,
+  #an-chestnut-odds .an-rankings-head,
+  #an-chestnut-odds .an-methodology-head {
+    position: relative;
+    min-height: 170px;
+    padding: 38px 33px 40px;
+    color: #fff;
+    background:
+      radial-gradient(circle at 96% 16%, rgba(0,230,168,.28), transparent 34%),
+      linear-gradient(90deg, #050b0c 0%, #071515 58%, #003f36 100%);
+    border: 0;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  #an-chestnut-odds .an-section-title,
+  #an-chestnut-odds .an-rankings-head h2,
+  #an-chestnut-odds .an-methodology h3 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    font-family: var(--an-display);
+    font-size: clamp(30px, 4.1vw, 54px);
+    line-height: 1.02;
+    font-weight: 900;
+    letter-spacing: .012em;
+    text-transform: uppercase;
+    text-shadow: 1.6px 1.6px 0 rgba(0,230,168,.28), 3px 3px 0 rgba(0,0,0,.22);
+  }
+
+  #an-chestnut-odds .an-section-sub,
+  #an-chestnut-odds .an-rankings-sub {
+    margin: 0;
+    padding: 16px clamp(18px, 2.4vw, 28px) 18px;
+    color: #27313c;
+    font-size: clamp(15px, 1.1vw, 17px);
+    line-height: 1.62;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    border-top: 0;
+    font-weight: 500;
+  }
+
+  /* Key findings */
+  #an-chestnut-odds .an-key-findings {
+    display: block;
+    margin: 0;
+    padding: 0 var(--an-page-pad) clamp(24px, 3vw, 36px);
+    color: var(--an-text);
+    font-family: var(--an-sans);
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-key-findings-inner {
+    display: block;
+    width: 100%;
+    max-width: var(--an-max);
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    border-left: 7px solid var(--an-green);
+    box-shadow: var(--an-shadow);
+  }
+
+  #an-chestnut-odds .an-key-findings-head {
+    display: block;
+    position: relative;
+    min-height: 150px;
+    margin: 0;
+    padding: 34px 33px 36px;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(90deg, #050b0c 0%, #071d1c 58%, #003f36 100%);
+    border: 0;
+    box-shadow: none;
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-key-findings-head h2 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: var(--an-display);
+    font-size: clamp(34px, 3.2vw, 44px);
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .012em;
+    text-transform: uppercase;
+    text-align: left;
+    text-shadow: 1.4px 1.4px 0 rgba(0,230,168,.30), 2.5px 2.5px 0 rgba(0,0,0,.2);
+  }
+
+  #an-chestnut-odds .an-key-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: clamp(14px, 2vw, 22px);
+    background: #f4fffb;
+  }
+
+  #an-chestnut-odds .an-key-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 16px 18px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    border-left: 6px solid var(--an-green);
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-key-row::after {
+    content: "";
+    position: absolute;
+    right: -34px;
+    top: -38px;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background: rgba(0,230,168,.12);
+    pointer-events: none;
+  }
+
+  #an-chestnut-odds .an-key-rank {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    color: var(--an-green);
+    background: #050b0c;
+    font-family: var(--an-display);
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  #an-chestnut-odds .an-key-copy {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    display: block;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-key-title {
+    display: block;
+    max-width: 980px;
+    margin: 0 0 5px;
+    padding: 0;
+    color: #111;
+    font-family: var(--an-display);
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 1.02;
+    font-weight: 900;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-key-text {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    margin: 0;
+    padding: 0;
+    color: #3f4854;
+    font-family: var(--an-sans);
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+    text-transform: none;
+  }
+
+  #an-chestnut-odds .an-key-text strong {
+    color: #111;
+    font-weight: 800;
+  }
+
+  /* Odds angle */
+  #an-chestnut-odds .an-angle {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    border-left: 7px solid var(--an-green);
+    box-shadow: var(--an-shadow);
+  }
+
+  #an-chestnut-odds .an-angle-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr);
+    gap: 0;
+  }
+
+  #an-chestnut-odds .an-angle-copy {
+    padding: clamp(18px, 2.7vw, 34px);
+    background:
+      radial-gradient(circle at 96% 10%, rgba(0,230,168,.1), transparent 22%),
+      #fff;
+  }
+
+  #an-chestnut-odds .an-angle-copy h2 {
+    margin: 0;
+    color: #111;
+    font-family: var(--an-display);
+    font-size: clamp(34px, 4.8vw, 62px);
+    line-height: .95;
+    font-weight: 900;
+    letter-spacing: .012em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-angle-copy p {
+    margin: 16px 0 0;
+    color: #2b3440;
+    font-family: var(--an-sans);
+    font-size: clamp(15.5px, 1.15vw, 17.5px);
+    line-height: 1.66;
+    font-weight: 500;
+  }
+
+  #an-chestnut-odds .an-pullout {
+    margin-top: 18px;
+    padding: 16px 18px;
+    color: #111;
+    background: #f4fffb;
+    border: 1px solid var(--an-line);
+    border-left: 6px solid var(--an-green);
+    font-family: var(--an-sans);
+    font-size: 15px;
+    line-height: 1.58;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  #an-chestnut-odds .an-angle-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    background: #050b0c;
+  }
+
+  #an-chestnut-odds .an-angle-stat {
+    position: relative;
+    padding: clamp(18px, 2.3vw, 28px);
+    overflow: hidden;
+    color: #fff;
+    background:
+      radial-gradient(circle at 96% 10%, rgba(0,230,168,.2), transparent 26%),
+      linear-gradient(180deg, #050b0c 0%, #071515 100%);
+    border-bottom: 1px solid rgba(0,230,168,.24);
+  }
+
+  #an-chestnut-odds .an-angle-stat:last-child {
+    border-bottom: 0;
+  }
+
+  #an-chestnut-odds .an-angle-stat span {
+    display: block;
+    color: #b9fff0;
+    font-family: var(--an-display);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-angle-stat strong {
+    display: block;
+    margin-top: 8px;
+    color: var(--an-green);
+    font-family: var(--an-display);
+    font-size: clamp(46px, 7cqw, 72px);
+    line-height: .9;
+    font-weight: 900;
+    letter-spacing: -.005em;
+  }
+
+  #an-chestnut-odds .an-angle-stat small {
+    display: block;
+    margin-top: 9px;
+    color: #e9fff8;
+    font-size: 13px;
+    line-height: 1.38;
+    font-weight: 600;
+  }
+
+  /* Rankings and tables */
+  #an-chestnut-odds .an-rankings {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    box-shadow: var(--an-shadow);
+  }
+
+  #an-chestnut-odds .an-rankings-tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 16px clamp(18px, 2.4vw, 28px);
+    background: #fbfffd;
+    border-bottom: 1px solid var(--an-line);
+    flex-wrap: wrap;
+  }
+
+  #an-chestnut-odds .an-tabs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  #an-chestnut-odds .an-tab-btn,
+  #an-chestnut-odds .an-btn {
+    appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: var(--an-display);
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-tab-btn {
+    padding: 15px 18px;
+    border: 1px solid var(--an-line);
+    background: #fff;
+    color: #111;
+  }
+
+  #an-chestnut-odds .an-tab-btn.is-active {
+    color: #fff;
+    background: #202020;
+    border-color: #111;
+    box-shadow: inset 5px 0 0 var(--an-green);
+  }
+
+  #an-chestnut-odds .an-btn {
+    padding: 15px 18px;
+    border: 1px solid #111;
+    background: #202020;
+    color: #fff;
+    box-shadow: inset 5px 0 0 var(--an-green);
+  }
+
+  #an-chestnut-odds .an-btn:hover,
+  #an-chestnut-odds .an-tab-btn:hover {
+    filter: brightness(.96);
+  }
+
+  #an-chestnut-odds .an-panel {
+    display: none;
+    padding: clamp(14px, 1.8vw, 20px) clamp(18px, 2.4vw, 28px) 20px;
+    background: #fff;
+  }
+
+  #an-chestnut-odds .an-panel.is-active {
+    display: block;
+  }
+
+  #an-chestnut-odds .an-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    box-shadow: inset 0 0 0 1px rgba(0,230,168,.12);
+    scrollbar-width: thin;
+    scrollbar-color: var(--an-green) #071515;
+  }
+
+  #an-chestnut-odds .an-table-scroll::-webkit-scrollbar {
+    height: 9px;
+  }
+
+  #an-chestnut-odds .an-table-scroll::-webkit-scrollbar-thumb {
+    background: var(--an-green);
+    border-radius: 999px;
+  }
+
+  #an-chestnut-odds .an-table {
+    width: 100%;
+    min-width: 760px;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+  }
+
+  #an-chestnut-odds .an-table th {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 16px 12px;
+    color: #fff;
+    background: linear-gradient(135deg, #050b0c, #252525);
+    border-right: 1px solid rgba(255,255,255,.12);
+    font-family: var(--an-display);
+    font-size: 14px;
+    line-height: 1.16;
+    font-weight: 900;
+    letter-spacing: .06em;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: normal;
+    cursor: pointer;
+  }
+
+  #an-chestnut-odds .an-table th:hover {
+    color: var(--an-green);
+  }
+
+  #an-chestnut-odds .an-table td {
+    padding: 15px 12px;
+    color: #222;
+    border-top: 1px solid var(--an-line);
+    border-right: 1px solid rgba(222,211,179,.7);
+    font-family: var(--an-sans);
+    font-size: 15px;
+    line-height: 1.35;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  #an-chestnut-odds .an-table th:last-child,
+  #an-chestnut-odds .an-table td:last-child {
+    border-right: 0;
+  }
+
+  #an-chestnut-odds .an-table tbody tr:nth-child(even) td {
+    background: #fbfffd;
+  }
+
+  #an-chestnut-odds .an-table tbody tr:hover td {
+    background: #e6fff8;
+  }
+
+  #an-chestnut-odds .an-rank-cell,
+  #an-chestnut-odds .an-moneyline-cell,
+  #an-chestnut-odds .an-prob-cell {
+    color: #050b0c;
+    font-family: var(--an-display);
+    font-weight: 900;
+    letter-spacing: .02em;
+  }
+
+  #an-chestnut-odds .an-rank-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 44px;
+    color: var(--an-green);
+    background: #050b0c;
+    font-family: var(--an-display);
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  #an-chestnut-odds .an-name-cell strong,
+  #an-chestnut-odds .an-milestone-cell strong {
+    display: block;
+    color: #111;
+    font-family: var(--an-sans);
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 800;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  #an-chestnut-odds .an-name-cell span,
+  #an-chestnut-odds .an-milestone-cell span {
+    display: block;
+    margin-top: 4px;
+    color: #607179;
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+
+  #an-chestnut-odds .an-prob-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-width: 128px;
+  }
+
+  #an-chestnut-odds .an-prob-bar {
+    display: inline-block;
+    width: 70px;
+    height: 9px;
+    background: #d9f7ef;
+    border: 1px solid #9fdccf;
+    overflow: hidden;
+  }
+
+  #an-chestnut-odds .an-prob-bar i {
+    display: block;
+    height: 100%;
+    width: var(--prob-width, 0%);
+    min-width: 2px;
+    background: linear-gradient(90deg, #050b0c 0%, #003f36 48%, var(--an-green) 100%);
+  }
+
+  #an-chestnut-odds .an-callout {
+    margin: 14px 0 0;
+    padding: 13px 15px;
+    color: #17252d;
+    background: #f4fffb;
+    border: 1px solid #b8ded4;
+    border-left: 5px solid var(--an-green);
+    font-size: 13.5px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+
+  #an-chestnut-odds .an-callout strong {
+    color: #111;
+    font-weight: 800;
+  }
+
+  #an-chestnut-odds .an-caption {
+    margin: 12px 0 0;
+    color: #607179;
+    font-size: 12.5px;
+    line-height: 1.45;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  /* Top story cards */
+  #an-chestnut-odds .an-top-focus {
+    display: block;
+    width: 100%;
+    margin: 18px 0 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    border-left: 7px solid var(--an-green);
+    box-shadow: var(--an-shadow);
+    color: var(--an-text);
+    font-family: var(--an-sans);
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-top-focus-head {
+    display: block;
+    margin: 0;
+    padding: 18px clamp(16px, 2.2vw, 24px);
+    background: linear-gradient(90deg, #050b0c 0%, #071d1c 58%, #003f36 100%);
+    color: #fff;
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-focus-intro {
+    display: block;
+    max-width: 760px;
+    margin: 0;
+    padding: 0;
+    color: #e9fff8;
+    font-family: var(--an-sans);
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-focus-card-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    background: #fff;
+  }
+
+  #an-chestnut-odds .an-focus-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: clamp(16px, 2vw, 22px) clamp(16px, 2.2vw, 26px);
+    background: #fff;
+    border-top: 1px solid var(--an-line);
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-focus-card:first-child {
+    border-top: 0;
+  }
+
+  #an-chestnut-odds .an-focus-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 9px;
+    padding: 0;
+    color: #111;
+    font-family: var(--an-display);
+    font-size: clamp(22px, 2.35vw, 34px);
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .018em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-focus-title span {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    margin: 0;
+    padding: 0 9px;
+    background: #050b0c;
+    color: var(--an-green);
+    font-size: .52em;
+    line-height: 1;
+    letter-spacing: .08em;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  #an-chestnut-odds .an-focus-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+    margin: 0 0 10px;
+    padding: 0;
+    text-align: left;
+  }
+
+  #an-chestnut-odds .an-focus-stats span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    margin: 0;
+    padding: 5px 8px;
+    color: #17252d;
+    background: #fbfffd;
+    border: 1px solid #b8ded4;
+    font-family: var(--an-sans);
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: left;
+    text-transform: none;
+  }
+
+  #an-chestnut-odds .an-focus-stats strong {
+    display: inline;
+    margin: 0 4px 0 0;
+    color: #00785f;
+    font-family: var(--an-display);
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .02em;
+  }
+
+  #an-chestnut-odds .an-focus-text {
+    display: block;
+    max-width: 1060px;
+    margin: 0;
+    padding: 0;
+    color: #3f4854;
+    font-family: var(--an-sans);
+    font-size: 14.5px;
+    line-height: 1.58;
+    font-weight: 500;
+    text-align: left;
+    text-transform: none;
+  }
+
+  #an-chestnut-odds .an-focus-text strong {
+    color: #111;
+    font-weight: 900;
+  }
+
+  /* Methodology */
+  #an-chestnut-odds .an-methodology {
+    margin: 0;
+    padding: 0 var(--an-page-pad) clamp(26px, 3vw, 40px);
+  }
+
+  #an-chestnut-odds .an-methodology-inner {
+    width: 100%;
+    max-width: var(--an-max);
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--an-line);
+    box-shadow: 0 10px 22px rgba(0,0,0,.05);
+  }
+
+  #an-chestnut-odds .an-methodology-body {
+    padding: clamp(18px, 2vw, 24px);
+    border-left: 6px solid var(--an-green);
+  }
+
+  #an-chestnut-odds .an-methodology p,
+  #an-chestnut-odds .an-methodology li {
+    color: #3b4652;
+    font-family: var(--an-sans);
+    font-size: 14.5px;
+    line-height: 1.68;
+    font-weight: 500;
+  }
+
+  #an-chestnut-odds .an-methodology p {
+    margin: 0 0 10px;
+  }
+
+  #an-chestnut-odds .an-methodology ul {
+    margin: 12px 0 0;
+    padding-left: 20px;
+  }
+
+  #an-chestnut-odds .an-methodology-disclaimer {
+    margin-top: 16px;
+    padding: 13px 15px;
+    color: #17252d;
+    background: #f4fffb;
+    border: 1px solid #b8ded4;
+    border-left: 5px solid var(--an-green);
+    font-size: 13.5px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+
+  #an-chestnut-odds .an-source-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  #an-chestnut-odds .an-source-card {
+    padding: 14px 15px;
+    background: #fbfffd;
+    border: 1px solid var(--an-line);
+    border-top: 5px solid var(--an-green);
+  }
+
+  #an-chestnut-odds .an-source-card span {
+    display: block;
+    margin-bottom: 7px;
+    color: #003f36;
+    font-family: var(--an-display);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-source-card a {
+    color: #111;
+    font-family: var(--an-sans);
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 800;
+  }
+
+  #an-chestnut-odds .an-footer {
+    margin: 0;
+    padding: 22px var(--an-page-pad);
+    color: #e9fff8;
+    background: #050b0c;
+    border-top: 5px solid var(--an-green);
+    font-family: var(--an-sans);
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  #an-chestnut-odds .an-footer-inner {
+    width: 100%;
+    max-width: var(--an-max);
+    margin: 0 auto;
+  }
+
+  #an-chestnut-odds .an-footer strong {
+    color: var(--an-green);
+    font-weight: 800;
+  }
+
+  #an-chestnut-odds .an-back-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 30;
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #050b0c;
+    background: var(--an-green);
+    color: #050b0c;
+    cursor: pointer;
+    font-family: var(--an-display);
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 900;
+    box-shadow: 0 12px 28px rgba(0,0,0,.2);
+  }
+
+  #an-chestnut-odds .an-back-top.is-visible {
+    display: flex;
+  }
+
+
+  /* Full-width campaign layout */
+  #an-chestnut-odds .an-intro-inner,
+  #an-chestnut-odds .an-section-inner,
+  #an-chestnut-odds .an-methodology-inner,
+  #an-chestnut-odds .an-footer-inner {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #an-chestnut-odds .an-section,
+  #an-chestnut-odds .an-intro,
+  #an-chestnut-odds .an-methodology {
+    padding-left: var(--an-page-pad) !important;
+    padding-right: var(--an-page-pad) !important;
+  }
+
+  #an-chestnut-odds .an-rankings,
+  #an-chestnut-odds .an-angle,
+  #an-chestnut-odds .an-table-scroll,
+  #an-chestnut-odds .an-table {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  #an-chestnut-odds .an-table {
+    min-width: 0;
+  }
+
+  /* Clean hover states, no tooltip markers */
+  #an-chestnut-odds .an-table th,
+  #an-chestnut-odds .an-tab-btn,
+  #an-chestnut-odds .an-btn,
+  #an-chestnut-odds .an-source-card,
+  #an-chestnut-odds .an-angle {
+    transition:
+      background 180ms ease,
+      color 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease,
+      filter 180ms ease;
+  }
+
+  #an-chestnut-odds .an-tab-btn:hover {
+    color: #050b0c;
+    background: #d7fff3;
+    border-color: var(--an-green);
+    box-shadow: inset 5px 0 0 var(--an-green), 0 8px 18px rgba(0,0,0,.06);
+    transform: translateY(-1px);
+    filter: none;
+  }
+
+  #an-chestnut-odds .an-tab-btn.is-active:hover,
+  #an-chestnut-odds .an-btn:hover {
+    color: #050b0c;
+    background: var(--an-green);
+    border-color: #050b0c;
+    box-shadow: inset 5px 0 0 #050b0c, 0 10px 22px rgba(0,0,0,.12);
+    transform: translateY(-1px);
+    filter: none;
+  }
+
+  #an-chestnut-odds .an-table th:hover {
+    color: #050b0c;
+    background: linear-gradient(135deg, var(--an-green) 0%, #d7fff3 100%);
+  }
+
+  #an-chestnut-odds .an-table tbody tr {
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+
+  #an-chestnut-odds .an-table tbody tr:hover {
+    transform: translateY(-1px);
+    box-shadow: inset 6px 0 0 var(--an-green);
+  }
+
+  #an-chestnut-odds .an-table tbody tr:hover td {
+    background: #e6fff8;
+  }
+
+  #an-chestnut-odds .an-source-card:hover {
+    border-color: var(--an-green);
+    box-shadow: 0 10px 24px rgba(0,0,0,.08);
+    transform: translateY(-1px);
+  }
+
+  #an-chestnut-odds .an-table th[data-tip],
+  #an-chestnut-odds .an-table th[data-tip]:hover {
+    text-decoration: none !important;
+    cursor: pointer !important;
+  }
+
+  #an-chestnut-odds .an-table th[data-tip]::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  @container an-embed (max-width: 900px) {
+    #an-chestnut-odds .an-hero-inner,
+    #an-chestnut-odds .an-angle-grid {
+      grid-template-columns: 1fr;
+    }
+
+    #an-chestnut-odds .an-source-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @container an-embed (max-width: 720px) {
+    #an-chestnut-odds {
+      --an-page-pad: 14px;
+    }
+
+    #an-chestnut-odds .an-hero {
+      padding-top: 30px;
+    }
+
+    #an-chestnut-odds .an-hero h1 {
+      font-size: clamp(44px, 13cqw, 72px);
+    }
+
+    #an-chestnut-odds .an-section-head,
+    #an-chestnut-odds .an-rankings-head,
+    #an-chestnut-odds .an-methodology-head {
+      min-height: 0;
+      padding: 28px 18px 30px;
+    }
+
+    #an-chestnut-odds .an-section-title,
+    #an-chestnut-odds .an-rankings-head h2,
+    #an-chestnut-odds .an-methodology h3 {
+      font-size: clamp(30px, 8.8cqw, 42px);
+      line-height: 1.05;
+      white-space: normal;
+    }
+
+    #an-chestnut-odds .an-key-findings-head {
+      min-height: 0;
+      padding: 28px 18px 30px;
+    }
+
+    #an-chestnut-odds .an-key-findings-head h2 {
+      font-size: clamp(30px, 8cqw, 40px);
+    }
+
+    #an-chestnut-odds .an-key-list {
+      gap: 9px;
+      padding: 12px;
+    }
+
+    #an-chestnut-odds .an-key-row {
+      gap: 12px;
+      padding: 13px 12px;
+    }
+
+    #an-chestnut-odds .an-key-rank {
+      flex-basis: 40px;
+      width: 40px;
+      height: 38px;
+      font-size: 20px;
+    }
+
+    #an-chestnut-odds .an-key-title {
+      font-size: clamp(18px, 5.2cqw, 24px);
+    }
+
+    #an-chestnut-odds .an-key-text {
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    #an-chestnut-odds .an-tabs,
+    #an-chestnut-odds .an-tab-btn {
+      width: 100%;
+    }
+
+    #an-chestnut-odds .an-tab-btn {
+      flex: 1 1 0;
+      padding-inline: 12px;
+    }
+
+    #an-chestnut-odds .an-table {
+      min-width: 760px;
+    }
+
+    #an-chestnut-odds .an-focus-card {
+      padding: 15px 13px;
+    }
+
+    #an-chestnut-odds .an-focus-title {
+      font-size: clamp(20px, 6cqw, 30px);
+      line-height: 1.05;
+    }
+  }
+
+  @container an-embed (max-width: 460px) {
+    #an-chestnut-odds .an-key-row {
+      gap: 10px;
+    }
+
+    #an-chestnut-odds .an-key-rank {
+      flex-basis: 34px;
+      width: 34px;
+      height: 34px;
+    }
+
+    #an-chestnut-odds .an-prob-wrap {
+      min-width: 112px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #an-chestnut-odds *,
+    #an-chestnut-odds *::before,
+    #an-chestnut-odds *::after {
+      scroll-behavior: auto !important;
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  #an-chestnut-odds #panel-contenders .an-table th:nth-child(1),
+  #an-chestnut-odds #panel-contenders .an-table td:nth-child(1) {
+    width: 10%;
+  }
+
+  #an-chestnut-odds #panel-contenders .an-table th:nth-child(2),
+  #an-chestnut-odds #panel-contenders .an-table td:nth-child(2) {
+    width: 30%;
+  }
+
+  #an-chestnut-odds #panel-contenders .an-table th:nth-child(3),
+  #an-chestnut-odds #panel-contenders .an-table td:nth-child(3) {
+    width: 20%;
+  }
+
+  #an-chestnut-odds #panel-contenders .an-table th:nth-child(4),
+  #an-chestnut-odds #panel-contenders .an-table td:nth-child(4) {
+    width: 18%;
+  }
+
+  #an-chestnut-odds #panel-contenders .an-table th:nth-child(5),
+  #an-chestnut-odds #panel-contenders .an-table td:nth-child(5) {
+    width: 22%;
+  }
+
+  #an-chestnut-odds #panel-record .an-table th:nth-child(1),
+  #an-chestnut-odds #panel-record .an-table td:nth-child(1) {
+    width: 25%;
+  }
+
+  #an-chestnut-odds #panel-record .an-table th:nth-child(2),
+  #an-chestnut-odds #panel-record .an-table td:nth-child(2) {
+    width: 35%;
+  }
+
+  #an-chestnut-odds #panel-record .an-table th:nth-child(3),
+  #an-chestnut-odds #panel-record .an-table td:nth-child(3) {
+    width: 18%;
+  }
+
+  #an-chestnut-odds #panel-record .an-table th:nth-child(4),
+  #an-chestnut-odds #panel-record .an-table td:nth-child(4) {
+    width: 22%;
+  }
+
+
+  /* Row hover popup */
+  #an-chestnut-odds .an-hover-popover {
+    position: fixed;
+    z-index: 2147483647;
+    width: min(340px, calc(100vw - 28px));
+    max-width: 340px;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    color: #17202a;
+    border: 1px solid rgba(0,230,168,.62);
+    border-top: 5px solid var(--an-green);
+    box-shadow: 0 18px 44px rgba(0,0,0,.24);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    pointer-events: none;
+    transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
+  }
+
+  #an-chestnut-odds .an-hover-popover.is-showing {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  #an-chestnut-odds .an-hover-popover[data-placement="top"] {
+    border-top: 5px solid var(--an-green);
+  }
+
+  #an-chestnut-odds .an-hover-popover[data-placement="bottom"] {
+    border-top: 0;
+    border-bottom: 5px solid var(--an-green);
+  }
+
+  #an-chestnut-odds .an-hover-popover-head {
+    display: block;
+    padding: 11px 13px 9px;
+    color: #fff;
+    background: linear-gradient(90deg, #050b0c 0%, #071515 58%, #003f36 100%);
+    font-family: var(--an-display);
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-hover-popover-body {
+    display: block;
+    padding: 11px 13px 12px;
+    color: #2b3440;
+    background: #fbfffd;
+    font-family: var(--an-sans);
+    font-size: 13px;
+    line-height: 1.45;
+    font-weight: 700;
+  }
+
+  #an-chestnut-odds .an-table tbody tr[data-hover-title] {
+    cursor: default;
+  }
+
+  #an-chestnut-odds .an-table tbody tr[data-hover-title]:hover td {
+    background: #d7fff3 !important;
+    box-shadow: inset 0 1px 0 rgba(0,230,168,.24), inset 0 -1px 0 rgba(0,230,168,.24);
+  }
+
+  #an-chestnut-odds .an-table tbody tr[data-hover-title]:hover td:first-child {
+    box-shadow: inset 7px 0 0 var(--an-green), inset 0 1px 0 rgba(0,230,168,.24), inset 0 -1px 0 rgba(0,230,168,.24);
+  }
+
+  #an-chestnut-odds .an-table tbody tr[data-hover-title]:hover .an-rank-pill,
+  #an-chestnut-odds .an-table tbody tr[data-hover-title]:hover .an-prob-bar i {
+    filter: brightness(1.15);
+  }
+
+  #an-chestnut-odds .an-tab-btn[data-hover-title],
+  #an-chestnut-odds .an-btn[data-hover-title] {
+    position: relative;
+  }
+
+
+  /* Implied probability-only hover popup trigger */
+  #an-chestnut-odds .an-table tbody tr[data-hover-title],
+  #an-chestnut-odds .an-tab-btn[data-hover-title],
+  #an-chestnut-odds .an-btn[data-hover-title] {
+    cursor: default !important;
+  }
+
+  #an-chestnut-odds .an-prob-cell[data-hover-title] {
+    cursor: help;
+    position: relative;
+    transition: background 160ms ease, box-shadow 160ms ease, color 160ms ease;
+  }
+
+  #an-chestnut-odds .an-prob-cell[data-hover-title]:hover {
+    background: #d7fff3 !important;
+    box-shadow: inset 0 -5px 0 var(--an-green);
+  }
+
+  #an-chestnut-odds .an-table tbody tr:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  #an-chestnut-odds .an-table tbody tr:hover td {
+    background: inherit;
+  }
+
+  #an-chestnut-odds .an-table tbody tr:nth-child(even):hover td {
+    background: #fbfffd;
+  }
+
+  #an-chestnut-odds .an-table tbody tr:hover .an-prob-cell[data-hover-title] {
+    background: #f4fffb;
+  }
+
+  #an-chestnut-odds .an-table tbody tr .an-prob-cell[data-hover-title]:hover {
+    background: #d7fff3 !important;
+  }
+
+
+  #an-chestnut-odds .an-table th .an-th-sub {
+    display: block;
+    margin-top: 4px;
+    color: rgba(255,255,255,.78);
+    font-family: var(--an-sans);
+    font-size: 11px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  #an-chestnut-odds .an-table th[data-hover-title] {
+    cursor: help;
+  }
+
+  #an-chestnut-odds .an-table th[data-hover-title]:hover .an-th-sub {
+    color: #050b0c;
+  }
+
+  #an-chestnut-odds .an-table th[data-hover-title]:hover {
+    box-shadow: inset 0 -5px 0 var(--an-green);
+  }
+
+
+  /* Compact tooltip copy */
+  #an-chestnut-odds .an-hover-popover {
+    width: min(280px, calc(100vw - 28px)) !important;
+    max-width: 280px !important;
+  }
+
+  #an-chestnut-odds .an-hover-popover-head {
+    padding: 10px 12px 8px !important;
+    font-size: 15px !important;
+  }
+
+  #an-chestnut-odds .an-hover-popover-body {
+    padding: 10px 12px 11px !important;
+    font-size: 12.5px !important;
+    line-height: 1.35 !important;
+  }
+
+
+  /* Download dropdown */
+  #an-chestnut-odds .an-download-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  #an-chestnut-odds .an-download-toggle {
+    min-width: 174px;
+    justify-content: center;
+  }
+
+  #an-chestnut-odds .an-download-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 50;
+    min-width: 238px;
+    padding: 8px;
+    background: #fbfffd;
+    border: 1px solid var(--an-line);
+    box-shadow: 0 14px 30px rgba(0,0,0,.16);
+  }
+
+  #an-chestnut-odds .an-download-option {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border: 0;
+    background: transparent;
+    color: #111;
+    text-align: left;
+    cursor: pointer;
+    font-family: var(--an-display);
+    font-size: 13px;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  #an-chestnut-odds .an-download-option:hover,
+  #an-chestnut-odds .an-download-option:focus-visible {
+    outline: 0;
+    background: #d7fff3;
+  }
+
+  #an-chestnut-odds .an-download-toggle.is-loading {
+    opacity: .72;
+    cursor: progress;
+  }
+
+  /* High-resolution image export */
+  #an-chestnut-odds .an-export-stage {
+    position: fixed;
+    left: -99999px;
+    top: 0;
+    z-index: -1;
+    width: 1800px;
+    max-width: 1800px;
+    padding: 0;
+    background: #ffffff;
+    color: #17252d;
+    pointer-events: none;
+  }
+
+  #an-chestnut-odds .an-export-stage,
+  #an-chestnut-odds .an-export-stage * {
+    box-sizing: border-box;
+  }
+
+  #an-chestnut-odds .an-export-card {
+    width: 1800px;
+    background: #ffffff;
+    border: 2px solid var(--an-line);
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  #an-chestnut-odds .an-export-card .an-export-head {
+    padding: 46px 52px 48px;
+    color: #fff;
+    background:
+      radial-gradient(circle at 96% 16%, rgba(0,230,168,.28), transparent 34%),
+      linear-gradient(90deg, #050b0c 0%, #071515 58%, #003f36 100%);
+    border-bottom: 8px solid var(--an-green);
+  }
+
+  #an-chestnut-odds .an-export-card .an-kicker {
+    min-height: 42px;
+    margin-bottom: 18px;
+    padding: 0 18px;
+    font-size: 15px;
+  }
+
+  #an-chestnut-odds .an-export-card h2 {
+    margin: 0;
+    color: #fff;
+    font-family: var(--an-display);
+    font-size: 62px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: .012em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 rgba(0,230,168,.26), 4px 4px 0 rgba(0,0,0,.22);
+  }
+
+  #an-chestnut-odds .an-export-card .an-export-sub {
+    max-width: 1420px;
+    margin: 14px 0 0;
+    color: #e9fff8;
+    font-family: var(--an-sans);
+    font-size: 22px;
+    line-height: 1.42;
+    font-weight: 600;
+  }
+
+  #an-chestnut-odds .an-export-card .an-export-body {
+    padding: 34px;
+    background: #ffffff;
+  }
+
+  #an-chestnut-odds .an-export-card .an-table-scroll {
+    overflow: visible !important;
+    width: 100% !important;
+    border: 2px solid var(--an-line);
+    box-shadow: inset 0 0 0 1px rgba(0,230,168,.12);
+  }
+
+  #an-chestnut-odds .an-export-card .an-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-table th {
+    position: static !important;
+    padding: 24px 18px !important;
+    font-size: 22px !important;
+    line-height: 1.12 !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-table th .an-th-sub {
+    margin-top: 6px !important;
+    font-size: 15px !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-table td {
+    padding: 22px 18px !important;
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-rank-pill {
+    width: 62px !important;
+    height: 58px !important;
+    font-size: 31px !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-name-cell strong,
+  #an-chestnut-odds .an-export-card .an-milestone-cell strong {
+    font-size: 23px !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-name-cell span,
+  #an-chestnut-odds .an-export-card .an-milestone-cell span {
+    font-size: 16px !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-prob-wrap {
+    min-width: 190px !important;
+    gap: 14px !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-prob-bar {
+    width: 118px !important;
+    height: 14px !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-caption,
+  #an-chestnut-odds .an-export-card .an-callout {
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+  }
+
+  #an-chestnut-odds .an-export-card .an-callout {
+    margin-top: 22px !important;
+    padding: 18px 20px !important;
+  }
+
+  #an-chestnut-odds .an-export-credit {
+    margin-top: 22px;
+    color: #607179;
+    font-family: var(--an-sans);
+    font-size: 15px;
+    line-height: 1.35;
+    font-style: italic;
+  }
+
+  @media (max-width: 620px) {
+    #an-chestnut-odds .an-download-wrap,
+    #an-chestnut-odds .an-download-toggle {
+      width: 100%;
+    }
+
+    #an-chestnut-odds .an-download-menu {
+      left: 0;
+      right: auto;
+      min-width: 100%;
+    }
+  }
+
+</style>
+</head>
+<body>
+<div id="an-chestnut-odds">
+<main class="an-main">
+    <section class="an-intro" aria-label="Introduction">
+      <div class="an-intro-inner">
+        <p>With Nathan’s Hot Dog Eating Contest returning on July 4, Action Network looked at what the latest published odds say about Joey Chestnut’s chances of winning and whether he can push his famous 76-hot-dog record even further.</p>
+        <p>The timing makes the contest a natural holiday-weekend sports story, landing around Independence Day and a busy summer sports calendar. The tables below convert the key prices into moneyline odds and implied probability.</p>
+      </div>
+    </section>
+<section class="an-section" id="angle">
+      <div class="an-section-inner">
+        <article class="an-angle">
+          <div class="an-angle-grid">
+            <div class="an-angle-copy">
+              <div class="an-kicker">Odds angle</div>
+              <h2>Winning looks likely. Breaking the record does not.</h2>
+              <p>Chestnut is priced as the clear favorite to win, but the odds of a true record-breaking total are far longer.</p>
+              <div class="an-pullout">Chestnut has a 96.2% implied chance to win Nathan’s, but just an 8.0% implied chance to clearly beat his 76-hot-dog record.</div>
+            </div>
+            <aside class="an-angle-stats" aria-label="odds contrast">
+              <div class="an-angle-stat">
+                <span>To win contest</span>
+                <strong>96.2%</strong>
+                <small>Implied probability from published outright odds.</small>
+              </div>
+              <div class="an-angle-stat">
+                <span>To clearly beat record</span>
+                <strong>8.0%</strong>
+                <small>Based on the 78+ hot dog milestone.</small>
+              </div>
+            </aside>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="an-section" id="odds-tables">
+      <div class="an-section-inner">
+        <article class="an-rankings">
+          <div class="an-rankings-head">
+            <div class="an-kicker">Odds explained</div>
+            <h2>Chestnut’s chances to win and chase the record</h2>
+          </div>
+          <p class="an-rankings-sub">Use the tabs below to see how the odds translate into moneyline and implied probability. In the first table, implied probability means the chance of each competitor winning. In the record table, it means the chance of Chestnut reaching each hot dog total.</p>
+
+          <div class="an-rankings-tools">
+            <div class="an-tabs" role="tablist" aria-label="Odds table tabs">
+              <button class="an-tab-btn is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-contenders" data-panel="panel-contenders">To win Nathan’s</button>
+              <button class="an-tab-btn" type="button" role="tab" aria-selected="false" aria-controls="panel-record" data-panel="panel-record">Record watch</button>
+            </div>
+            <div class="an-download-wrap">
+              <button class="an-btn an-download-toggle" type="button" id="downloadTableToggle" aria-expanded="false" aria-controls="downloadTableMenu">Download table</button>
+              <div class="an-download-menu" id="downloadTableMenu" hidden>
+                <button class="an-download-option" type="button" data-download-type="table">Table only image</button>
+                <button class="an-download-option" type="button" data-download-type="detailed">Detailed image</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="an-panel is-active" id="panel-contenders" role="tabpanel">
+            <div class="an-table-scroll">
+              <table class="an-table an-sortable-table" aria-label="Joey Chestnut vs leading contenders odds table">
+                <thead>
+                  <tr>
+                    <th data-sort="number">Rank</th>
+                    <th data-sort="text">Competitor</th>
+                    <th data-sort="number">Fractional odds</th>
+                    <th data-sort="number">Moneyline</th>
+                    <th data-sort="number" data-hover-title="Chance of winning" data-hover-text="The odds-based chance each competitor wins.">Chance of winning<br><span class="an-th-sub">(implied probability)</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="an-rank-cell" data-value="1"><span class="an-rank-pill">1</span></td>
+                    <td class="an-name-cell" data-value="Joey Chestnut"><strong>Joey Chestnut</strong><span>Heavy favorite</span></td>
+                    <td data-value="0.04">1/25</td>
+                    <td class="an-moneyline-cell" data-value="-2500">-2500</td>
+                    <td class="an-prob-cell" data-value="96.2" data-hover-title="96.2% implied probability" data-hover-text="Odds suggest about a 96.2% chance to win."><span class="an-prob-wrap">96.2% <span class="an-prob-bar"><i style="--prob-width:96.2%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-rank-cell" data-value="2"><span class="an-rank-pill">2</span></td>
+                    <td class="an-name-cell" data-value="Patrick Bertoletti"><strong>Patrick Bertoletti</strong><span>Nearest named challenger</span></td>
+                    <td data-value="12">12/1</td>
+                    <td class="an-moneyline-cell" data-value="1200">+1200</td>
+                    <td class="an-prob-cell" data-value="7.7" data-hover-title="7.7% implied probability" data-hover-text="Odds suggest about a 7.7% chance to win."><span class="an-prob-wrap">7.7% <span class="an-prob-bar"><i style="--prob-width:7.7%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-rank-cell" data-value="3"><span class="an-rank-pill">3</span></td>
+                    <td class="an-name-cell" data-value="James Webb"><strong>James Webb</strong><span>Leading outsider</span></td>
+                    <td data-value="20">20/1</td>
+                    <td class="an-moneyline-cell" data-value="2000">+2000</td>
+                    <td class="an-prob-cell" data-value="4.8" data-hover-title="4.8% implied probability" data-hover-text="Odds suggest about a 4.8% chance to win."><span class="an-prob-wrap">4.8% <span class="an-prob-bar"><i style="--prob-width:4.8%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-rank-cell" data-value="4"><span class="an-rank-pill">4</span></td>
+                    <td class="an-name-cell" data-value="Geoffrey Esper"><strong>Geoffrey Esper</strong><span>Long-shot contender</span></td>
+                    <td data-value="25">25/1</td>
+                    <td class="an-moneyline-cell" data-value="2500">+2500</td>
+                    <td class="an-prob-cell" data-value="3.8" data-hover-title="3.8% implied probability" data-hover-text="Odds suggest about a 3.8% chance to win."><span class="an-prob-wrap">3.8% <span class="an-prob-bar"><i style="--prob-width:3.8%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-rank-cell" data-value="5"><span class="an-rank-pill">5</span></td>
+                    <td class="an-name-cell" data-value="Nick Wehry"><strong>Nick Wehry</strong><span>Long-shot contender</span></td>
+                    <td data-value="33">33/1</td>
+                    <td class="an-moneyline-cell" data-value="3300">+3300</td>
+                    <td class="an-prob-cell" data-value="2.9" data-hover-title="2.9% implied probability" data-hover-text="Odds suggest about a 2.9% chance to win."><span class="an-prob-wrap">2.9% <span class="an-prob-bar"><i style="--prob-width:2.9%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-rank-cell" data-value="6"><span class="an-rank-pill">6</span></td>
+                    <td class="an-name-cell" data-value="George Chiger"><strong>George Chiger</strong><span>Long-shot contender</span></td>
+                    <td data-value="50">50/1</td>
+                    <td class="an-moneyline-cell" data-value="5000">+5000</td>
+                    <td class="an-prob-cell" data-value="2" data-hover-title="2.0% implied probability" data-hover-text="Odds suggest about a 2.0% chance to win."><span class="an-prob-wrap">2.0% <span class="an-prob-bar"><i style="--prob-width:2%"></i></span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="an-caption">Table includes leading contenders with published outright odds, not the full confirmed field. In this table, implied probability shows each competitor’s chance of winning as suggested by the odds. It is not adjusted for bookmaker margin.</p>
+            <div class="an-callout"><strong>Safe caveat:</strong> Do not describe this as the full field. It is a leading-contenders table based on published outright odds.</div>
+          </div>
+
+          <div class="an-panel" id="panel-record" role="tabpanel">
+            <div class="an-table-scroll">
+              <table class="an-table an-sortable-table" aria-label="Joey Chestnut record territory odds table">
+                <thead>
+                  <tr>
+                    <th data-sort="number">Milestone</th>
+                    <th data-sort="text">What it means</th>
+                    <th data-sort="number">Moneyline</th>
+                    <th data-sort="number" data-hover-title="Chance of reaching total" data-hover-text="The odds-based chance Chestnut reaches each mark.">Chance of reaching total<br><span class="an-th-sub">(implied probability)</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="an-milestone-cell" data-value="70"><strong>70+ hot dogs</strong><span>Near recent winning level</span></td>
+                    <td data-value="Around his 2025 winning range">Around his 2025 winning range</td>
+                    <td class="an-moneyline-cell" data-value="-127">-127</td>
+                    <td class="an-prob-cell" data-value="56" data-hover-title="56.0% implied probability" data-hover-text="Odds suggest about a 56.0% chance to reach 70+."><span class="an-prob-wrap">56.0% <span class="an-prob-bar"><i style="--prob-width:56%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-milestone-cell" data-value="72"><strong>72+ hot dogs</strong><span>Clears 70 again</span></td>
+                    <td data-value="Clears 70 again">Clears 70 again</td>
+                    <td class="an-moneyline-cell" data-value="144">+144</td>
+                    <td class="an-prob-cell" data-value="41" data-hover-title="41.0% implied probability" data-hover-text="Odds suggest about a 41.0% chance to reach 72+."><span class="an-prob-wrap">41.0% <span class="an-prob-bar"><i style="--prob-width:41%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-milestone-cell" data-value="74"><strong>74+ hot dogs</strong><span>Record-adjacent</span></td>
+                    <td data-value="Within two of his record">Within two of his record</td>
+                    <td class="an-moneyline-cell" data-value="400">+400</td>
+                    <td class="an-prob-cell" data-value="20" data-hover-title="20.0% implied probability" data-hover-text="Odds suggest about a 20.0% chance to reach 74+."><span class="an-prob-wrap">20.0% <span class="an-prob-bar"><i style="--prob-width:20%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-milestone-cell" data-value="76"><strong>76+ hot dogs</strong><span>Tie or beat</span></td>
+                    <td data-value="Ties or beats his Nathan's record">Ties or beats his Nathan’s record</td>
+                    <td class="an-moneyline-cell" data-value="488">+488</td>
+                    <td class="an-prob-cell" data-value="17" data-hover-title="17.0% implied probability" data-hover-text="A 17.0% chance to tie or beat the record."><span class="an-prob-wrap">17.0% <span class="an-prob-bar"><i style="--prob-width:17%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-milestone-cell" data-value="78"><strong>78+ hot dogs</strong><span>Clear record break</span></td>
+                    <td data-value="Clearly beats his Nathan's record">Clearly beats his Nathan’s record</td>
+                    <td class="an-moneyline-cell" data-value="1150">+1150</td>
+                    <td class="an-prob-cell" data-value="8" data-hover-title="8.0% implied probability" data-hover-text="An 8.0% chance to clearly beat the record."><span class="an-prob-wrap">8.0% <span class="an-prob-bar"><i style="--prob-width:8%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-milestone-cell" data-value="80"><strong>80+ hot dogs</strong><span>Historic territory</span></td>
+                    <td data-value="Breaks record by four or more">Breaks record by four or more</td>
+                    <td class="an-moneyline-cell" data-value="2400">+2400</td>
+                    <td class="an-prob-cell" data-value="4" data-hover-title="4.0% implied probability" data-hover-text="Odds suggest about a 4.0% chance to reach 80+."><span class="an-prob-wrap">4.0% <span class="an-prob-bar"><i style="--prob-width:4%"></i></span></span></td>
+                  </tr>
+                  <tr><td class="an-milestone-cell" data-value="82"><strong>82+ hot dogs</strong><span>Extreme long shot</span></td>
+                    <td data-value="Historic long-shot total">Historic long-shot total</td>
+                    <td class="an-moneyline-cell" data-value="4900">+4900</td>
+                    <td class="an-prob-cell" data-value="2" data-hover-title="2.0% implied probability" data-hover-text="Odds suggest about a 2.0% chance to win."><span class="an-prob-wrap">2.0% <span class="an-prob-bar"><i style="--prob-width:2%"></i></span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="an-caption">In this table, implied probability shows Chestnut’s chance of reaching each listed hot dog total. The 76+ line would tie or beat his Nathan’s record. For a clear record-breaking total, 78+ is the cleaner benchmark.</p>
+            <div class="an-callout"><strong>Safe caveat:</strong> Use “ties or beats” for 76+. Use “clearly beats the record” for 78+.</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="an-methodology" id="methodology">
+      <div class="an-methodology-inner">
+        <div class="an-methodology-head">
+          <div class="an-kicker">Methodology</div>
+          <h3>How the odds were converted</h3>
+        </div>
+        <div class="an-methodology-body">
+          <p>Action Network odds experts created these tables by reviewing the latest market pricing for each entry, including Kalshi markets, then converting the prices into moneyline odds and implied probability.</p>
+          <p>The final numbers give more weight to where active markets are pricing each outcome, with a smaller weight given to wider public perception and discussion around the contest.</p>
+          <ul>
+            <li>The contender table focuses on leading names with a realistic market path to winning, not the full contest field.</li>
+            <li>The record table looks at Chestnut’s chances of reaching each listed hot dog total.</li>
+            <li>Use “ties or beats” for 76+. Use 78+ for a clear record-breaking benchmark.</li>
+          </ul>
+          <div class="an-methodology-disclaimer"><strong>Note:</strong> These odds are for entertainment and analysis purposes. For current Kalshi market prices, see our <a href="https://www.actionnetwork.com/online-sports-betting/reviews/kalshi" target="_blank" rel="nofollow noopener noreferrer">Kalshi promo code guide</a>.</div>
+
+          <div class="an-source-grid" aria-label="Further reading">
+            <div class="an-source-card">
+              <span>Market context</span>
+              <a href="https://kalshi.com/markets/kxnathanshd/nathans-hot-dog-eating-contest-winner/kxnathanshd-26men?op_market_ticker=KXNATHANSHD-26MEN-JCHE" target="_blank" rel="nofollow noopener noreferrer">Nathan’s winner market</a>
+            </div>
+            <div class="an-source-card">
+              <span>Record context</span>
+              <a href="https://majorleagueeating.com/records/" target="_blank" rel="nofollow noopener noreferrer">Nathan’s record list</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="an-footer">
+    <div class="an-footer-inner"><strong>Action Network odds study:</strong> odds analysis using moneyline and implied probability.</div>
+  </footer>
+
+
+  <div class="an-hover-popover" id="anHoverPopover" role="status" aria-live="polite">
+    <div class="an-hover-popover-head" id="anHoverPopoverTitle"></div>
+    <div class="an-hover-popover-body" id="anHoverPopoverBody"></div>
+  </div>
+
+  <button class="an-back-top" type="button" id="anBackTop" aria-label="Back to top">↑</button>
+</div>
+
+<script>
+(function () {
+  const root = document.getElementById('an-chestnut-odds');
+  if (!root) return;
+
+  const tabButtons = Array.from(root.querySelectorAll('.an-tab-btn'));
+  const panels = Array.from(root.querySelectorAll('.an-panel'));
+
+  function activatePanel(panelId) {
+    tabButtons.forEach(btn => {
+      const active = btn.dataset.panel === panelId;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-selected', String(active));
+    });
+
+    panels.forEach(panel => {
+      panel.classList.toggle('is-active', panel.id === panelId);
+    });
+  }
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => activatePanel(button.dataset.panel));
+  });
+
+  root.querySelectorAll('.an-sortable-table').forEach(table => {
+    const headers = table.querySelectorAll('th[data-sort]');
+    let sortState = { index: -1, direction: 1 };
+
+    headers.forEach((header, index) => {
+      header.addEventListener('click', () => {
+        const type = header.dataset.sort;
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+
+        sortState.direction = sortState.index === index ? sortState.direction * -1 : 1;
+        sortState.index = index;
+
+        rows.sort((a, b) => {
+          const aCell = a.children[index];
+          const bCell = b.children[index];
+          const aValue = aCell.dataset.value || aCell.textContent.trim();
+          const bValue = bCell.dataset.value || bCell.textContent.trim();
+
+          if (type === 'number') {
+            return (parseFloat(aValue) - parseFloat(bValue)) * sortState.direction;
+          }
+
+          return aValue.localeCompare(bValue) * sortState.direction;
+        });
+
+        rows.forEach(row => tbody.appendChild(row));
+      });
+    });
+  });
+
+  const downloadToggle = root.querySelector('#downloadTableToggle');
+  const downloadMenu = root.querySelector('#downloadTableMenu');
+  const downloadOptions = Array.from(root.querySelectorAll('.an-download-option'));
+
+  function setDownloadMenu(open) {
+    if (!downloadToggle || !downloadMenu) return;
+    downloadMenu.hidden = !open;
+    downloadToggle.setAttribute('aria-expanded', String(open));
+  }
+
+  function loadHtml2Canvas() {
+    if (window.html2canvas) return Promise.resolve(window.html2canvas);
+
+    return new Promise((resolve, reject) => {
+      const existing = document.querySelector('script[data-html2canvas-loader]');
+      if (existing) {
+        existing.addEventListener('load', () => resolve(window.html2canvas), { once: true });
+        existing.addEventListener('error', reject, { once: true });
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
+      script.async = true;
+      script.dataset.html2canvasLoader = 'true';
+      script.onload = () => resolve(window.html2canvas);
+      script.onerror = () => reject(new Error('Could not load image export library.'));
+      document.head.appendChild(script);
+    });
+  }
+
+  function getActiveTableMeta() {
+    const activePanel = root.querySelector('.an-panel.is-active');
+    const isRecord = activePanel && activePanel.id === 'panel-record';
+
+    return {
+      panel: activePanel,
+      table: activePanel ? activePanel.querySelector('.an-table-scroll') : null,
+      caption: activePanel ? activePanel.querySelector('.an-caption') : null,
+      callout: activePanel ? activePanel.querySelector('.an-callout') : null,
+      fileName: isRecord ? 'joey-chestnut-record-watch-odds.png' : 'joey-chestnut-to-win-nathans-odds.png',
+      kicker: isRecord ? 'Record watch' : 'To win Nathan’s',
+      title: isRecord ? 'Joey Chestnut record watch odds' : 'Joey Chestnut odds to win Nathan’s',
+      sub: isRecord
+        ? 'Chance of reaching each hot dog total, shown as moneyline and implied probability.'
+        : 'Leading contender odds, shown as moneyline and implied probability.'
+    };
+  }
+
+  function cloneForExport(type) {
+    const meta = getActiveTableMeta();
+    if (!meta.table) return null;
+
+    const stage = document.createElement('div');
+    stage.className = 'an-export-stage';
+
+    const card = document.createElement('div');
+    card.className = 'an-export-card';
+
+    if (type === 'detailed') {
+      const head = document.createElement('div');
+      head.className = 'an-export-head';
+      head.innerHTML = '<div class="an-kicker">' + meta.kicker + '</div><h2>' + meta.title + '</h2><p class="an-export-sub">' + meta.sub + '</p>';
+      card.appendChild(head);
+    }
+
+    const body = document.createElement('div');
+    body.className = 'an-export-body';
+
+    const tableClone = meta.table.cloneNode(true);
+    body.appendChild(tableClone);
+
+    if (type === 'detailed') {
+      if (meta.caption) body.appendChild(meta.caption.cloneNode(true));
+      if (meta.callout) body.appendChild(meta.callout.cloneNode(true));
+
+      const credit = document.createElement('div');
+      credit.className = 'an-export-credit';
+      credit.textContent = 'Action Network odds study. Implied probabilities are rounded and are not adjusted for margin.';
+      body.appendChild(credit);
+    }
+
+    card.appendChild(body);
+    stage.appendChild(card);
+    root.appendChild(stage);
+
+    return {
+      stage,
+      card,
+      fileName: type === 'detailed'
+        ? meta.fileName.replace('.png', '-detailed.png')
+        : meta.fileName
+    };
+  }
+
+  async function downloadActiveTable(type) {
+    const exportTarget = cloneForExport(type);
+    if (!exportTarget) return;
+
+    try {
+      if (downloadToggle) {
+        downloadToggle.classList.add('is-loading');
+        downloadToggle.textContent = 'Preparing...';
+      }
+
+      const html2canvas = await loadHtml2Canvas();
+
+      await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+
+      const canvas = await html2canvas(exportTarget.card, {
+        backgroundColor: '#ffffff',
+        scale: 3,
+        useCORS: true,
+        allowTaint: false,
+        logging: false,
+        width: exportTarget.card.offsetWidth,
+        height: exportTarget.card.offsetHeight,
+        windowWidth: 1800,
+        windowHeight: exportTarget.card.offsetHeight + 200
+      });
+
+      const link = document.createElement('a');
+      link.download = exportTarget.fileName;
+      link.href = canvas.toDataURL('image/png', 1.0);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } catch (error) {
+      console.error(error);
+      alert('Sorry, the image download could not be created. Please try again.');
+    } finally {
+      exportTarget.stage.remove();
+
+      if (downloadToggle) {
+        downloadToggle.classList.remove('is-loading');
+        downloadToggle.textContent = 'Download table';
+      }
+    }
+  }
+
+  if (downloadToggle && downloadMenu) {
+    downloadToggle.addEventListener('click', () => {
+      setDownloadMenu(downloadMenu.hidden);
+    });
+
+    document.addEventListener('click', event => {
+      if (!downloadToggle.contains(event.target) && !downloadMenu.contains(event.target)) {
+        setDownloadMenu(false);
+      }
+    });
+  }
+
+  downloadOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      const type = option.dataset.downloadType || 'table';
+      setDownloadMenu(false);
+      downloadActiveTable(type);
+    });
+  });
+
+  const popover = root.querySelector('#anHoverPopover');
+  const popoverTitle = root.querySelector('#anHoverPopoverTitle');
+  const popoverBody = root.querySelector('#anHoverPopoverBody');
+  let activeHoverTarget = null;
+
+  function positionPopover(target) {
+    if (!popover || !target) return;
+
+    const rect = target.getBoundingClientRect();
+    const popRect = popover.getBoundingClientRect();
+    const gap = 12;
+
+    let left = rect.left + (rect.width / 2) - (popRect.width / 2);
+    left = Math.max(14, Math.min(left, window.innerWidth - popRect.width - 14));
+
+    let top = rect.top - popRect.height - gap;
+    let placement = 'top';
+
+    if (top < 12) {
+      top = rect.bottom + gap;
+      placement = 'bottom';
+    }
+
+    if (top + popRect.height > window.innerHeight - 12) {
+      top = Math.max(12, window.innerHeight - popRect.height - 12);
+    }
+
+    popover.style.left = left + 'px';
+    popover.style.top = top + 'px';
+    popover.dataset.placement = placement;
+  }
+
+  function showPopover(target) {
+    if (!popover || !popoverTitle || !popoverBody) return;
+
+    const title = target.dataset.hoverTitle;
+    const text = target.dataset.hoverText;
+
+    if (!title || !text) return;
+
+    activeHoverTarget = target;
+    popoverTitle.textContent = title;
+    popoverBody.textContent = text;
+    popover.classList.add('is-showing');
+
+    requestAnimationFrame(() => positionPopover(target));
+  }
+
+  function hidePopover() {
+    if (!popover) return;
+    activeHoverTarget = null;
+    popover.classList.remove('is-showing');
+  }
+
+  root.querySelectorAll('[data-hover-title][data-hover-text]').forEach(target => {
+    target.addEventListener('mouseenter', () => showPopover(target));
+    target.addEventListener('focus', () => showPopover(target));
+    target.addEventListener('mouseleave', hidePopover);
+    target.addEventListener('blur', hidePopover);
+  });
+
+  window.addEventListener('scroll', () => {
+    if (activeHoverTarget) positionPopover(activeHoverTarget);
+  }, { passive: true });
+
+  window.addEventListener('resize', () => {
+    if (activeHoverTarget) positionPopover(activeHoverTarget);
+  });
+
+  const backTop = root.querySelector('#anBackTop');
+
+  if (backTop) {
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('is-visible', window.scrollY > 700);
+    }, { passive: true });
+
+    backTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+})();
+</script>
+</body>
+</html>
